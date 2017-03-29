@@ -9,8 +9,11 @@
 extern crate serde_derive; // we have to define it here because macros must be at root 
 
 pub mod struct_json;
+pub mod struct_json_attributes;
+
 fn main() {
     println!("---Examples---");
     struct_json::run();
+    struct_json_attributes::run();
 }
 

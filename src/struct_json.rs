@@ -14,15 +14,15 @@ pub fn run() {
     };
     let child2 = Sample {
         name: "Jane".to_string(),
-        age: 30,
+        age: 10,
         children: vec![],
     };
     let parent = Sample {
         name: "Joe".to_string(),
-        age: 30,
+        age: 40,
         children: vec![child1, child2],
     };
-    println!("* struct_json");
+    println!("\n* struct_json");
 
     // First serialize struct to json string.
     let serialized = serde_json::to_string(&parent).unwrap();

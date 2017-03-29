@@ -9,7 +9,7 @@ It is runnable. You can see each module is covering one spesific usage.
 Covered examples;
 
 1. Struct to Json String and reverse.
-
+2. Struct to Json String and reverse with Attributes.
 
 ## Installation
  1. Download and install **Rust** from [here](https://www.rust-lang.org/en-US/downloads.html)
