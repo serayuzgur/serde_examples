@@ -1,5 +1,5 @@
 # Serde Examples
-This project aims to show the usage of [serde](https://github.com/serde-rs/json) project with a simple project structure and simple examples. 
+This project aims to show the usage of [serde](https://github.com/serde-rs/serde) project with a simple project structure and simple examples. 
 Common usages will be covered for helping everyday scenarios. 
 
 It is runnable. You can see each module is covering one spesific usage.
