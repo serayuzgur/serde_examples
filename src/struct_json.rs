@@ -6,14 +6,14 @@
 extern crate serde_json;
 /// Shows the basic usage of the scenario.
 pub fn run() {
-    let seray = Sample {
+    let sample = Sample {
         name: "Joe".to_string(),
         age: 30,
     };
     println!("* struct_json");
 
     // First serialize struct to json string.
-    let serialized = serde_json::to_string(&seray).unwrap();
+    let serialized = serde_json::to_string(&sample).unwrap();
     println!("\tSerialized : {}", &serialized);
 
     // Than deserialize json string to struct.
