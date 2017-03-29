@@ -6,14 +6,26 @@
 extern crate serde_json;
 /// Shows the basic usage of the scenario.
 pub fn run() {
-    let sample = Sample {
+    
+    let child1 = Sample {
+        name: "John".to_string(),
+        age: 15,
+        children: vec![],
+    };
+    let child2 = Sample {
+        name: "Jane".to_string(),
+        age: 30,
+        children: vec![],
+    };
+    let parent = Sample {
         name: "Joe".to_string(),
         age: 30,
+        children: vec![child1, child2],
     };
     println!("* struct_json");
 
     // First serialize struct to json string.
-    let serialized = serde_json::to_string(&sample).unwrap();
+    let serialized = serde_json::to_string(&parent).unwrap();
     println!("\tSerialized : {}", &serialized);
 
     // Than deserialize json string to struct.
@@ -28,5 +40,6 @@ pub fn run() {
 struct Sample {
     name: String,
     age: u8,
+    children: Vec<Sample>,
 }
 
